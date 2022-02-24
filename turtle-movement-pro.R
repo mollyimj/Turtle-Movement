@@ -1,4 +1,15 @@
 library(tidyverse, ggplot2)
 
+turtles <- read_excel("data/turtles.xlsx")
 turtles
-view(turtles)
+
+# rename variables
+rename(
+  turtles, 
+  trap = Trap,
+  sex = Sex, 
+  age = Age, 
+  length = Len
+  )
+
+# organize by carapace length <12cm, >12cm 
