@@ -1,5 +1,6 @@
 library(tidyverse, ggplot2)
 
+library(readxl)
 turtles <- read_excel("data/turtles.xlsx")
 turtles
 
